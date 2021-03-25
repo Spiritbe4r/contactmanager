@@ -1,0 +1,34 @@
+/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Quicksand';
+}
+
+
+body{
+    background: #e2e2e2!important;
+}
+.bg-primary{
+    background-color: #009688 !important;
+}
+.banner{
+    width: 100%;
+    height: 93vh;
+    background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)
+    ),url("../img/banner1.jpg");
+    color: white;
+    background-size:cover;
+   
+}
+
+.my-card{
+    padding: 20px;
+    background:#FFFFFF;
+}

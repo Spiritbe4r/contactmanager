@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="es"xmlns="http://www.thymeLeaf.org" 
-th:replace="base::Layout(~{::section})">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>this is a home page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-    <section>
-    <h1>this is a home page</h1>
+<html lang="es" xmlns="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>this is a home page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+</head>
+
+<body>
+    <section class="banner d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <h1 class="font-weight-bold">Manejador de Contactos Inteligente</h1>
+            <p>
+                Comienza a recolectar tus contactos de una manera muy inteligente.
+                Nosotros te proveeremos de una manera muy eficiente de Manejarlos.
+            </p>
+            <button class="btn bg-primary btn-lg text-white">Comenzar</button>
+        </div>
     </section>
-    
-    
-       
-        
-        <script src="" async defer></script>
-    </body>
+
+    <script src="" async defer></script>
+</body>
+
 </html>
