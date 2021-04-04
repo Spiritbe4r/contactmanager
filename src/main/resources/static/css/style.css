@@ -32,3 +32,22 @@ body{
     padding: 20px;
     background:#FFFFFF;
 }
+
+
+
+  .containerlogin{
+        border:2px solid blue;
+        text-align:center;
+        
+        height:500px;
+        width:400px;
+    }
+ 
+    .h1login{
+        margin:auto;
+    }
+    .rowlogin{
+        height:90px;
+        width:396px;
+        background-color:paleturquoise;
+    }

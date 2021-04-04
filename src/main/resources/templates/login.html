@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>this is a home page</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="" />
+
+
+</head>
+
+<body>
+	<section>
+
+
+		<div class="container mt-5 containerlogin">
+			<div class="row rowlogin">
+				<form id="login-form" class="form" method="post" th:action="@{/dologin}">
+					<h1><i class="fa fa-lock h1login" aria-hidden="true"></i> Login</h1>
+
+					<br /><br />
+					<div th:if="${param.error}" class="alert alert-danger">
+						Invalid username and password
+
+					</div>
+					<div th:if="${param.Logout}" class="alert alert-danger">
+						You have been logged out
+					</div>
+
+
+
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user-tie"></i></span>
+						</div>
+						<input type="text" name="username" class="form-control" placeholder="username or email" />
+					</div><br />
+
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-key icon"></i></span>
+						</div>
+						<input type="Password" name="password" class="form-control" placeholder="password" />
+					</div><br />
+					<div class="checkbox">
+						<label><input type="checkbox" value="" /> Remember me</label>
+					</div><br />
+					<button type="submit" class="btn btn-flat btn-success"><span class="glyphicon glyphicon-off"></span>
+						Login</button>
+				</form>
+				<!--    <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-remove"></span>Login with Facebook </button><br />
+               <br /> <center><div style="border:1px solid black;height:1px;width:300px;"></div></center><br />-->
+				<div class="footer">
+					<p>Don't have an Account! <a href="#">Sign Up Here</a></p>
+					<p>Forgot <a href="#">Password?</a></p>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<script src="" async defer></script>
+</body>
+
+</html>

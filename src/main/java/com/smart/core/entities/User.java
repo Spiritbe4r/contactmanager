@@ -23,6 +23,7 @@ public class User {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
+	
 	@NotBlank(message="Columna Nombre es Requerida !!")
 	@Size(min=2,max=20,message="minimo 2 y maximo 20 caracteres es Requerido !!")
 	private String name;
@@ -33,9 +34,10 @@ public class User {
 	@NotBlank(message="Columna Email es Requerida !! ")
 	private String email;
 	@NotBlank(message="Columna Password es Requerida !!")
-	@Size(min=8,max=200,message="Password minimo 8 caracteres es Requerido !!")
+	@Size(min=8,message="Password minimo 8 caracteres es Requerido !!")
 	private String password;
 	private String role;
+	
 	private boolean enabled;
 	private String imageUrl;
     @Column(length=500)
@@ -103,6 +105,22 @@ public class User {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", role=" + role
 				+ ", enabled=" + enabled + ", imageUrl=" + imageUrl + ", about=" + about + ", contacts=" + contacts
 				+ "]";
+	}
+	public User(int id,
+			@NotBlank(message = "Columna Nombre es Requerida !!") @Size(min = 2, max = 20, message = "minimo 2 y maximo 20 caracteres es Requerido !!") String name,
+			@Email @NotBlank(message = "Columna Email es Requerida !! ") String email,
+			@NotBlank(message = "Columna Password es Requerida !!") @Size(min = 8, max = 200, message = "Password minimo 8 caracteres es Requerido !!") String password,
+			String role, boolean enabled, String imageUrl, String about, List<Contact> contacts) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.role = role;
+		this.enabled = enabled;
+		this.imageUrl = imageUrl;
+		this.about = about;
+		this.contacts = contacts;
 	}
 	
 	

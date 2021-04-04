@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>this is a home page</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+</head>
+
+<body>
+    <section>
+      <h1>Bienvenido tu eres un Usuario Normal</h1>
+<h2>Este es tu dashboard privado</h2>
+<h3>Username <span th:text="${user.name}"></span></h3>
+<h3>Email<span th:text="${user.email}"></span></h3>
+<h3><a th:href="@{/logout}">Logout</a></h3>
+    </section>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
